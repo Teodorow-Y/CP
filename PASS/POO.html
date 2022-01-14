@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO</title>
+
+    <script>
+        class animal
+        {
+          constructor(especie, edad, color)
+          {
+            this.especie = especie;
+            this.edad = edad;
+            this.color = color;
+            this.info = `Hi, i'm a ${this.especie}, i have ${this.edad}YO, and i'm a ${this.color}`
+          }
+
+          verInfo ()
+          {
+            document.write(this.info + "<br>");
+          }
+
+
+        }
+
+        let perro = new animal ("Perro", 18, "Blanqillo") ;
+        let cat = new animal ("cat", 2, "Blanqilla") ;
+        let cow = new animal ("-cow", 4, "Tolon, tolon") ;
+    document.write(perro.info + "<br>");
+    document.write(cat.info + "<br>");
+    document.write(cow.info + "<br>");
+
+    perro.verInfo();
+    cat.verInfo();
+    cow.verInfo();
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

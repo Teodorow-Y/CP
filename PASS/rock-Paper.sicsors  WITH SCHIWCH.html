@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ROCK PAPER Scissor</title>
+
+<script type="text/javascript">
+
+    let user = parseInt(prompt("1. Rock - 2.Paper - 3.Scissor"));
+
+  //* 1 rock - 2 paper - 3 scissor
+  var rps = ["Rock", "Paper", "Scissor"];
+
+
+    function tomarRandom(max) {
+
+      let valor = Math.floor(Math.random() * max);
+      if (valor <= 0) {
+        valor ++;
+      }
+      return valor
+    }
+  var machine = tomarRandom(4);
+
+
+
+  var mtext = rps[machine-1];
+  var usert = rps[user - 1];
+  console.log("Texto mtext " + mtext);
+  console.log("Texto user " + usert);
+  console.log("USER " + user);
+  console.log("MACHINE " + machine);
+
+
+
+
+
+  switch (true) {
+    case (machine == user):
+      document.write("Machine: " + mtext + ". User: " + usert + " EMPATE");
+      break;
+
+    case (machine == 1 && user == 3):
+      document.write("Machine: " + mtext + ". User: " + usert + " MACHINE WIN");
+      break;
+
+    case (machine == 1 && user == 2):
+      document.write("Machine: " + mtext + ". User: " + usert + " USER WIN");
+      break;
+
+   case (machine == 2 && user == 3):
+      document.write("Machine: " + mtext + ". User: " + usert + " USER WIN");
+      break;
+
+   case (machine == 2 && user == 1):
+      document.write("Machine: " + mtext + ". User: " + usert + " MACHINE WIN");
+      break;
+
+    case (machine == 3 && user == 1):
+      document.write("Machine: " + mtext + ". User: " + usert + " USER WIN");
+      break;
+
+    case (machine == 3 && user == 2):
+      document.write("Machine: " + mtext + ". User: " + usert + " MACHINE WIN");
+      break;
+
+    default: document.write("MaMATE UN webo");
+
+  }
+</script>
+  </head>
+  <body>
+
+  </body>
+</html>

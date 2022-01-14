@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>P1 - VAR  - LET </title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        /* Function scope -> var */
+var i;
+function printNumbers() {
+	for (var i = 0; i < 10; i++) {
+		setTimeout(
+      function printer() {
+	      console.log(i);
+	    },
+			1000 * i
+		);
+	}
+}
+printNumbers();
+
+/* Block scope -> let */
+function printNumbers() {
+	for (let i = 0; i < 10; i++) {
+		// es como definir i aquí
+		setTimeout(
+      function printer() {
+	      console.log(i);
+	    },
+			1000 * i
+		);
+	}
+}
+printNumbers();
+
+      </script>
+    </body>
+  </html>

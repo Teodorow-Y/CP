@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ASISTENCIA Y CONTADOR</title>
+  <script type="text/javascript">
+
+    let canAlum = prompt("Cuantos alumnos son? ");
+    let canAlumTo = [];
+
+    for (i = 0; i < canAlum; i++) {
+      canAlumTo [i] /*añadicion del array*/= [prompt("Ingrese el nombre del alumno" + (i+1)), 0/*N de assitencia*/];
+      console.log(canAlumTo);
+    }
+
+    const tomarAsistencia = (nombre,p) => {
+      let presencia = prompt(nombre + " Asistió?");
+      if (presencia == "p" || presencia == "P"){
+        canAlumTo[p][1]++; /*array drento de array, dando valor a*/
+      }
+    }
+
+    for ( i = 0; i < 10 /*total dias*/ ; i++) {
+      for (var alumno in canAlumTo) {
+          tomarAsistencia(canAlumTo[alumno][0]/*Para que salga la posicion 0 del arary*/,  alumno);
+        }
+    }
+
+    for (alumno in canAlumTo){
+      let resultado = `${canAlumTo[alumno][0] /*aca mando el nombre*/}: <br>
+      __________Presentes: ${canAlumTo[alumno][1] /*aca inoco el numero de ALUMNO y la segunca casilla del array para las ASISTENCIAS*/} <br>
+      __________Ausencias: ${10 - canAlumTo[alumno][1]}
+      `;
+      /*Abajo vamos añadir en letras rojas, si se va a reprobar o no*/
+      if (10 - canAlumTo[alumno][1] > 4){
+        resultado += "<b style='color:red'> REPROBADO POR INASISTENCIA </b><br><br>";
+      }
+      else {
+        resultado+= "<br><br>"
+      }
+      document.write(resultado);
+    }
+console.log(canAlumTo[1]);
+  </script></head>
+  <body>
+
+  </body>
+</html>

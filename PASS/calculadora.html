@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULADORA</title>
+
+    <script type="text/javascript">
+      const sumar = (num1,num2) =>{
+        return parseInt(num1) + parseInt (num2);
+      }
+      const restar = (num1,num2) =>{
+        return parseInt(num1) - parseInt (num2);
+      }
+      const mult = (num1,num2) =>{
+        return parseInt(num1) * parseInt (num2);
+      }
+      const div = (num1,num2) =>{
+        return parseInt(num1) / parseInt (num2);
+      }
+
+      let kindOp = prompt("What kind of operation, do you want to do? : 1. Sumar 2.Restar 3.Multiplicar 4.Dividir");
+      if (kindOp == 1) {
+        let numO1 = prompt("Write firts number");
+        let numO2 = prompt("Write second number");
+        resultador = sumar(numO1,numO2);
+        alert("Su resultado es: " + resultador);
+      }
+      else if (kindOp == 2) {
+        let numO1 = prompt("Write firts number");
+        let numO2 = prompt("Write second number");
+        resultador = restar(numO1,numO2);
+        alert("Su resultado es: " + resultador);
+      }
+      else if (kindOp ==3) {
+        let numO1 = prompt("Write firts number");
+        let numO2 = prompt("Write second number");
+        resultador = mult(numO1,numO2);
+        alert("Su resultado es: " + resultador);
+      }
+        else if (kindOp ==4) {
+        let numO1 = prompt("Write firts number");
+        let numO2 = prompt("Write second number");
+        resultador = div(numO1,numO2);
+        alert("Su resultado es: " + resultador);
+      }
+      else {
+        alert ("FUCK YOU! WE NEED A NUMBER");
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

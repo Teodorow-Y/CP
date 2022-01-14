@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funtioncs</title>
+  </head>
+
+  <body>
+    <input type="button" name="" value="Come on" id="boton">
+<script type="text/javascript">
+
+    var boton1 = document.getElementById('boton');
+    boton1.addEventListener("click", sumarforN);
+
+function sumarforN (cantN = 0)
+{
+  var sumando = 0;
+  var st = 0;
+  while(sumando <= cantN)
+  {
+    st += sumando;
+    sumando ++;
+    
+
+  }
+return alert(""+ st);
+}
+
+sumarforN(100)
+</script>
+    </body>
+    </html>

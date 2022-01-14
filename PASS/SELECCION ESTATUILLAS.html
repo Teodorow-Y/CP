@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SELECCION DE ESTATUILLAS</title>
+
+    <script type="text/javascript">
+      function solution(statues) {
+      const numeros = statues;
+      numeros.sort(function(a, b)
+      {return b - a})
+      console.log(numeros);
+      let rest = parseInt(numeros.length);
+      console.log(rest);
+
+      let result = ( (numeros[0] - numeros[(numeros.length-1)] - numeros.length) + 1);
+      console.log(result);
+      return result;
+    }
+statues [105, 2200, 330];
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+
+//*
+const numeros = [6, 2, 3, 8];
+      numeros.sort(function(a, b)
+      {return b - a})
+      console.log(numeros);
+      let rest = parseInt(numeros.length);
+      console.log(rest);
+
+      let result = ( (numeros[0] - numeros[(numeros.length-1)] - numeros.length) + 1);
+      console.log(result);

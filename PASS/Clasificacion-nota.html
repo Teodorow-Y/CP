@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CALIFICACION NOTA</title>
+<script type="text/javascript">
+do {
+
+var nota = prompt("Cual ha sido tu clasificación?");
+
+
+if (Number(nota)==nota){
+
+  if(nota >= 0 && nota <= 3)
+  {
+    document.write("Muy deficiente");
+  }
+  else if (nota >=3.00001 && nota <= 5) {
+    document.write("Insuficiente");
+  }
+  else if (nota >=5.00001 && nota <= 6) {
+    document.write("Suficiente");
+  }
+  else if (nota >=6.00001 && nota <= 7) {
+    document.write("Bien");
+  }
+  else if (nota >=7.00001 && nota <= 9) {
+    document.write("Notable");
+  }
+  else if (nota >=9.00001 && nota <= 10) {
+    document.write("Sobresaliente");
+  }
+  else if (nota >10.00) {
+    document.write("No existe este margen en la nota");
+  }
+}
+
+  else {
+    document.write("Debes escribir tu nota en numeros");
+  }
+
+} while (nota != undefined); //Undefined es cuando se pulsa Cancelar.
+</script>
+  </head>
+
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MULTIPLICAR ARRAY Y VER MAYOR</title>
+
+    <script type="text/javascript">
+
+
+
+      function solution(inputArray) {
+        let  numMayor = inputArray[0] * inputArray[1];
+        var retorno = numMayor;
+
+        console.log(inputArray.length + " long");
+
+        const verificador = (num1, num2, num3) => {
+                console.log(num1 + "," + num2 + "," + num3 + " Values");
+                let contador = num2 * num3;
+          console.log(numMayor + " Primero");
+
+            if (numMayor <= contador) {
+              numMayor = contador;
+              retorno = contador;
+              console.log(retorno + "cambiado");
+            }
+          <}
+
+
+        for (i = 0; i < inputArray.length -2 ; i++) {
+        verificador(inputArray[i], inputArray[i+1] , inputArray[i+2]);
+        console.log(i);
+        }
+        console.log(retorno);
+        return retorno;
+
+      }
+
+
+
+    solution([3, 6, -2, -5, 7, 3 ]);
+    solution([5, 6, -4, 2, 3, 2, -23]);
+
+
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MATH MAX</title>
+<script type="text/javascript">
+
+    function solution(inputArray) {
+      var numMax = inputArray[0] * inputArray[1];
+      console.log(inputArray);
+      console.log(numMax);
+
+
+      for (i = 0; i < inputArray.length - 1; i++) {
+        numMax = Math.max(numMax, (inputArray[i + 0 ]*inputArray[i+1]));
+        console.log(numMax);
+        document.write(numMax + "final");
+        return numMax;
+      }
+
+      }
+
+
+solution([3, 6, -2, -5, 10, 7, 3]);
+
+</script>
+  </head>
+  <body>
+
+  </body>
+</html>

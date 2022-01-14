@@ -1,0 +1,11 @@
+palab.map(i => {
+  var deletre = '';
+  var palabra = i.split('');
+  console.log(palabra.length, palabra);
+  for (var letra = i.length - 1; letra >= 0; letra--)
+   {
+     console.log(letra);
+     deletre += palabra[letra];
+   }
+   alert("" + deletre);
+   return deletre;

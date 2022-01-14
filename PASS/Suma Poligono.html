@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SUMA POLIGONO</title>
+    <script type="text/javascript">
+    function solution(n) {
+      var cont= 0;
+      var sum = 0;
+      var sum2 = 0;
+
+      for( i = n; i > 0; i--) {
+
+              cont = i + (i-1);
+              sum = sum + cont;
+              sum2 = sum - (n + (n-1));
+
+              //*Se puede usar Math.pow  y trabajarlo con exponecial.
+      }
+    return sum+sum2}
+
+solution(2);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COFLA - 1
+    </title>
+<script type="text/javascript">
+
+var Roberto = 1.50;
+var Pedro = 1.7 ;
+var Cofla = prompt("Cuando dinero tienes?");
+var hel1 = 0.60;
+var hel2 = 1;
+var hel3 = 1.60;
+var hel4 = 1.7;
+var hel5 = 1.8;
+var hel6 = 2.90;
+var hel7 = 2.90;
+var Cofla_m = parseInt(Cofla);
+console.log(Cofla);
+console.log(Cofla_m);
+
+if (Cofla >= hel1 && Cofla < hel2)
+  {
+    document.write("Compra el Helado 1 y te sobra " + (Cofla - hel1) + "$" );
+  }
+else if  (Cofla >= hel2 && Cofla < hel3)
+  {
+    document.write("Compra el Helado 2 y te sobra" + (Cofla - hel2) + "$");
+  }
+else if  (Cofla >= hel3 && Cofla < hel4)
+  {
+    document.write("Compra el Helado 3 y te sobra" + (Cofla - hel3) + "$");
+  }
+else if  (Cofla >= hel4 && Cofla < hel5)
+  {
+    document.write("Compra el Helado 4 y te sobra" + (Cofla - hel4 )+ "$");
+  }
+else if  (Cofla >= hel5 && Cofla < hel6)
+  {
+    document.write("Compra el Helado 5 y te sobra" + (Cofla - hel5) + "$");
+  }
+else if  (Cofla >= hel6 && Cofla >= hel7)
+    {
+      let seleccion = prompt("Elige 1: Hel6 / 2: Hel7");
+      if (seleccion == 1) {
+        document.write("Compra el Helado 6 y te sobra" + (Cofla - hel6) + "$");
+      }
+      else if (seleccion == 2) {
+        document.write("Compra el Helado 7 y te sobra" + (Cofla - hel7 )+ "$");
+      }
+    }
+    else {
+      document.write("Sino tienes dinero LARGOOO!");
+    }
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>

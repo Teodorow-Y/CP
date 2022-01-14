@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DISCOTECA</title>
+    <script type="text/javascript">
+      let time = prompt("What's time is it? ");
+      let eFree  = false;
+      validar (time);
+      function validar(){
+        let name = prompt("what's ur name?");
+        let age  =  prompt(name + " Cuantos años tienes?");
+
+
+        if (age => 18 ) {
+            if (time => 200 && time <= 700) {
+              document.write (name + "Puedes ingresar");
+              return eFree = true;
+            }
+            else {
+              document.write("You need to pay ur ticket!");
+            }
+
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
